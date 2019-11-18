@@ -1,0 +1,34 @@
+h1{
+  margin-left: 650px;
+  margin-top: 70px;
+  font-family: serif;
+  font-style: oblique;
+  font-size: 40px;
+}
+body{
+  /*background-image: url(‪D:\WEB TECH\got.jpg);*/
+  background-size: 1920px 1080px;
+}
+img{
+  margin-left: 300px;
+  margin-top: 190px;
+  border-radius:25px;
+    border:3px dashed maroon;
+}
+p{
+  font-size: 25px;
+  font-style: oblique;
+  font-family: serif;
+  color:maroon;
+}
+span{
+  color: maroon;
+}
+
+button{
+  font-size: 25px;
+  margin-left: 200px;
+}
+div{
+  margin-left: 0px;
+}
