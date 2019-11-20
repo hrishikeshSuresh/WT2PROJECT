@@ -16,7 +16,7 @@ session_start();
 
 <div id='Title' style="z-index:1;">
 <ul>
-<li><img src="Logo.png" alt="icon" style="float:left; width:55px; height:70px;box-shadow:5px 5px" /></li>
+<li><img src="Logo.jpg" alt="icon" style="float:left; width:55px; height:70px;box-shadow:5px 5px" /></li>
 <li> <a href="Base_Page.php" target="_self" style="padding:20;font-size:20pt;"> CRITICS.com</a></li>
 <li style="margin-left:40px;">
   <div class="dropdown">
@@ -62,32 +62,32 @@ session_start();
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 6</div>
-  <img src="IT.jpg" style="width:100%;height:500;">
+  <img src="burger_1.jpg" style="width:100%;height:500;">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 6</div>
-  <img src="WFTPOTA.jpg" style="width:100%;height:500;">
+  <img src="sushi_1.jpg" style="width:100%;height:500;">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 6</div>
-  <img src="kingsman-the-golden-circle.jpg" style="width:100%;height:500;">
+  <img src="nachos_1.jpg" style="width:100%;height:500;">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 6</div>
-  <img src="the-inhumans.jpg" style="width:100%;height:500;">
+  <img src="dhokla_1.jpg" style="width:100%;height:500;">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 6</div>
-  <img src="the--hitmans--bodyguard.jpg" style="width:100%;height:500;">
+  <img src="chilli_1.png" style="width:100%;height:500;">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">6 / 6</div>
-  <img src="greys-anatomy-season-14.jpg" style="width:100%;height:500;">
+  <img src="ribs_1.jpg" style="width:100%;height:500;">
 </div>
 
 
@@ -102,15 +102,15 @@ session_start();
 </div>
 
 <div id="Search_Bar">
-  <img style="margin-top:80;margin-left:600;border-radius:25px;" src="Capture.JPG" />
+  <img style="margin-top:80;margin-left:550;border-radius:25px;" src="Capture.png" />
   <div style="position:absolute;top:850;left:350">
 <form action="link.php" method="post" id="form">
-  <input id="Searching" type="text" name="search" placeholder="Search.."  list="movies">
+  <input style="left:5" id="Searching" type="text" name="search" placeholder="Search.."  list="movies">
   <input type="submit" value="" class="search" id="button-holder">
 </form>
 </div>
 <div>
-  <a href="../LoginPage/Login.php" target="_self" style="text-decoration:none;"><button type="button" class="button" style="position:absolute;top:950;left:900;">Register Here if new!</button></a>
+  <a href="../LoginPage/Login.php" target="_self" style="text-decoration:none;"><button type="button" class="button" style="position:absolute;top:1050;left:500;">Register Here if new!</button></a>
 </div>
 </div>
 <datalist id="movies">
