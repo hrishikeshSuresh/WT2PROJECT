@@ -1,0 +1,121 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Preacher</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/movietemplate.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <!--Navigation Bar -->
+  <div class = "navbar" target =_top>
+    <span id="navbarele">
+    <img src="images/logo_w.png" id="logo"/></img>
+      <a href="index.php" class="btn">Home</a>
+      <a href="movies.html" class="btn">Movies</a>
+      <a href="tvshows.html" class="btn">TV Shows</a>
+      <a href="myprofile.php" class="btn">My Profile</a>
+      <input type="text" name="search" placeholder="Search" class="search_text">
+      <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
+      <div class="loginBtn">
+        <a href="login.html" class="btn">Log in</a>
+        <a href="signup.html" class="btn">Sign up</a>
+      </div>
+    </span>
+  </div><!--Navigation bar ends -->
+
+  <div id="moviename">
+    <h2>Preacher</h2>
+  </div>
+  <div id="titlecard">
+    <img src="images/preacher.jpg" id="poster" /></img>
+    <iframe width="800" height="350" src="https://www.youtube.com/embed/3gueM4VilVE" frameborder="0" allowfullscreen id="movie_vid"></iframe>
+    <form action="ajax/rating.php" method="post" class="ajax">
+      <span class="starRating star_move">
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+      <button type="submit">Rate It</button>
+    </form>
+    <div id="genre">
+      <p>Fantasy</p>
+    </div>
+    <div id="certification">
+      <p>TV- MA</p>
+    </div>
+
+    <div id="description">
+      <div id="movie_info">
+        <p>Show Info</p>
+      </div>
+      <p>
+        Fulfilling a promise to his deceased father, one-time outlaw Jesse Custer returns home to West Texas to take over his dad's church. Jesse's mission, however, becomes twisted when his body is overcome by a cryptic force that unleashes within him a highly unconventional power. Together with hell-raising ex-girlfriend Tulip and Irish vagabond Cassidy, the preacher-in-training embarks on a journey to find God in a world inhabited by holy, hellish, and everything-in-between characters.
+      </p>
+    </div>
+    <div id="cast">
+      <div id="castword">
+        <p>Cast</p>
+      </div>
+
+      <div id="castcard">
+        <img src="images/cast/preacher/catlin.jpg" class="cast"/>
+      <p id="designation">
+        Director
+      </p>
+      <p id="castname">
+      Sam Catlin
+      </p>
+    </div>
+
+      <div id="castcard">
+            <img src="images/cast/preacher/cooper.jpg" class="cast"/>
+          <p id="designation">
+            Actor
+          </p>
+          <p id="castname">
+            Dominic Cooper
+          </p>
+        </div>
+
+        <div id="castcard">
+              <img src="images/cast/preacher/ruth.jpg" class="cast"/>
+            <p id="designation">
+              Actor
+            </p>
+            <p id="castname">
+              Ruth Negga
+            </p>
+          </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">  </script>
+<script src="movietemplete.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login form</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+
+  <div class = "navbar" target =_top>
+    <a href="index.php"><img src="images/logo_w.png" id="logo"/></img></a>
+      <a href="index.php" class="btn">Home</a>
+      <a href="movies.html" class="btn">Movies</a>
+      <a href="tvshows.html" class="btn">TV Shows</a>
+      <a href="myprofile.php" class="btn">My Profile</a>
+      <input type="text" name="search" placeholder="Search" class="search_text">
+      <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
+      <div class="loginBtn">
+        <a href="login.html" class="btn">Log in</a>
+        <a href="signup.html" class="btn">Sign up</a>
+      </div>
+  </div>
+
+	<div class="loginBox">
+      <form action="log_user.php" method="post">
+        <p>Username</p>
+        <input type="text" name="uname" placeholder="Username" id="uname" required>
+        <p>Password</p>
+        <input type="Password" name="pass" placeholder="Password" required>
+        <input type="submit" name="" value="Login">
+      </form>
+    </div>
+
+</html>

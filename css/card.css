@@ -1,0 +1,184 @@
+#toggle-heart1
+{
+  position: absolute;
+  left: -100vw;
+}
+
+[for='toggle-heart1']
+{
+color: #aab8c2;
+opacity: 0.4;
+}
+
+#toggle-heart1:checked + label
+{
+color: #e2264d;
+opacity: 1;
+}
+
+[for='toggle-heart1']
+{
+font-size: 30px;
+cursor: pointer;
+}
+
+#toggle-heart2
+{
+  position: absolute;
+  left: -100vw;
+}
+
+[for='toggle-heart2']
+{
+color: #aab8c2;
+opacity: 0.4;
+}
+
+#toggle-heart2:checked + label
+{
+color: #e2264d;
+opacity: 1;
+}
+
+[for='toggle-heart2']
+{
+font-size: 30px;
+cursor: pointer;
+}
+
+.card1
+{
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  height: 690px;
+  width: 360px;
+  box-shadow: 2px 1px 8px 2px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card2
+{
+  position: absolute;
+  top: 80px;
+  left: 680px;
+  height: 690px;
+  width: 360px;
+  box-shadow: 2px 1px 8px 2px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.card1:hover
+{
+  box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
+}
+
+.card2:hover
+{
+  box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5);
+}
+
+
+/* Add some padding inside the card container */
+.container1
+{
+  width: 30px;
+  height: 60px;
+  padding: 2px  145px;
+}
+
+.container2
+{
+  position: relative;
+  width: 500px;
+  height: 60px;
+}
+
+#suits
+{
+position: relative;
+top: 20px;
+left: 10px;
+width: 340px;
+height: 500px;
+}
+
+#goblet
+{
+position: relative;
+top: 20px;
+left: 10px;
+width: 340px;
+height: 500px;
+}
+
+
+
+
+#img1
+{
+position: relative;
+top: 20px;
+left: 10px;
+width: 340px;
+height: 500px;
+}
+
+#img2
+{
+position: relative;
+top: 20px;
+left: 10px;
+width: 340px;
+height: 500px;
+}
+
+
+
+
+
+
+h4
+{
+font-size: 32px;
+font-family: "Josefin Sans", sans-serif;
+}
+
+[for='toggle-heart1']
+{
+position: relative;
+top: 10px;
+left: 165px;
+/*padding: 2px 150px;*/
+}
+
+[for='toggle-heart2']
+{
+position: relative;
+top: -5px;
+left: 165px;
+}
+
+.p
+{
+position: relative;
+font-size: 15px;
+top: -20px;
+left: 10px;
+padding-right: 10px;
+}
+
+h6
+{
+  position: absolute;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  padding-right: 50px;
+  padding-top: 1px;
+  left: 65px;
+}

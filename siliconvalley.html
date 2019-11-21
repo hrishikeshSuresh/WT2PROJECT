@@ -1,0 +1,123 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Silicon Valley</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/movietemplate.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <!--Navigation Bar -->
+  <div class = "navbar" target =_top>
+    <span id="navbarele">
+    <img src="images/logo_w.png" id="logo"/></img>
+      <a href="index.php" class="btn">Home</a>
+      <a href="movies.html" class="btn">Movies</a>
+      <a href="tvshows.html" class="btn">TV Shows</a>
+      <a href="myprofile.php" class="btn">My Profile</a>
+      <input type="text" name="search" placeholder="Search" class="search_text">
+      <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
+      <div class="loginBtn">
+        <a href="login.html" class="btn">Log in</a>
+        <a href="signup.html" class="btn">Sign up</a>
+      </div>
+    </span>
+  </div><!--Navigation bar ends -->
+
+  <div id="moviename">
+    <h2>Silicon Valley</h2>
+  </div>
+  <div id="titlecard">
+    <img src="images/siliconvalley.jpg" id="poster" /></img>
+    <iframe width="800" height="350" src="https://www.youtube.com/embed/69V__a49xtw" frameborder="0" allowfullscreen id="movie_vid"></iframe>
+    <form action="ajax/rating.php" method="post" class="ajax">
+      <span class="starRating star_move">
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+      <button type="submit">Rate It</button>
+    </form>
+    <div id="genre">
+      <p> Comedy</p>
+    </div>
+    <div id="certification">
+      <p>TV - MA</p>
+    </div>
+
+    <div id="description">
+      <div id="movie_info">
+        <p>Movie Info</p>
+      </div>
+      <p>
+        Set amidst the high-tech world of the Silicon Valley in USA,
+        the series revolves around the struggles of six programmers who are trying to make a mark in the big,
+         bad world of programming.
+      </p>
+    </div>
+    <div id="cast">
+      <div id="castword">
+        <p>Cast</p>
+      </div>
+
+      <div id="castcard">
+        <img src="images/cast/siliconvalley/judge.jpg" class="cast"/>
+      <p id="designation">
+        Director
+      </p>
+      <p id="castname">
+        Mike Judge
+      </p>
+    </div>
+
+      <div id="castcard">
+            <img src="images/cast/siliconvalley/thomas.jpg" class="cast"/>
+          <p id="designation">
+            Actor
+          </p>
+          <p id="castname">
+            Thomas Middleditch
+          </p>
+        </div>
+
+        <div id="castcard">
+              <img src="images/cast/siliconvalley/mross.jpg" class="cast"/>
+            <p id="designation">
+              Actor
+            </p>
+            <p id="castname">
+              Matt Ross
+            </p>
+          </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">  </script>
+<script src="movietemplete.js"></script>
+
+</body>
+</html>

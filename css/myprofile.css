@@ -1,0 +1,108 @@
+html, body,span h1, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { 
+  background: #c2c7ce;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #313131;
+  font-size: 62.5%; 
+  line-height: 1; 
+}
+
+h1 {
+  font-family:Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+  padding: .1em 0;
+  color: #444;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+h1 > span {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+p {
+  display: block;
+  font-size: 1.6em;
+  line-height: 1.55em;
+  margin-bottom: 22px;
+  color: #555;
+}
+
+#w {
+  position: relative;
+  top:100px;
+  display: block;
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+#content {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 25px 20px;
+  padding-bottom: 35px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  height: 300px;
+}
+
+.setting {
+  display: block;
+  font-weight: normal;
+  padding: 7px 3px;
+  border-top: 1px solid #d6d1af;
+  margin-bottom: 5px;
+}
+.setting span {
+  float: left; 
+  width: 250px;
+  font-weight: bold;
+}
+
+.pass {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    position: relative;
+    top:60px;
+    font-family: verdana;
+}
+
+.danger {background-color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+#form_change{
+  position: relative;
+  top: 80px;
+  display: none;
+}
+
+#new_pass{
+  font-size: 20px;
+}
+.warning {background-color: #ff9800; top: 10px;} /* Orange */
+.warning:hover {background: #e68a00;}
+

@@ -1,0 +1,98 @@
+p
+{
+  font-weight: 100;
+  font-size: 18px;
+  color: black;
+}
+
+h1
+{
+  color: darkgray;
+  font-family:'Josefin Sans', sans-serif;
+}
+
+#greenbox
+{
+
+  position: relative;
+  height: 100px;
+  width: 1180px;
+  border-radius: 1px;
+  background-color: grey;
+  transition: 0.3s;
+
+}
+
+#greenbox:hover
+{
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.5);
+}
+
+
+#pagecard
+{
+  position: relative;
+  top: 100px;
+  left: 150px;
+  height: 220%;
+  width: 1180px;
+  box-shadow: 2px 1px 8px 2px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#greenbox p
+{
+  font-family:'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  color: white;
+  position: relative;
+  left: 470px;
+  top: 30px;
+
+}
+
+.moviecard
+{
+position: relative;
+display: inline-grid;
+margin-right: 150px;
+margin-top: 30px;
+margin-bottom: 30px;
+top: 30px;
+left: 100px;
+height: 290px;
+width: 220px;
+box-shadow: 2px 1px 8px 2px rgba(0,0,0,0.3);
+transition: 0.3s;
+padding-bottom: 10px;
+
+}
+
+.moviecard:hover
+{
+  box-shadow: 0 0px 5px 0 rgba(0,0,0,0.5);
+}
+
+#moviethumbnail
+{
+  position: relative;
+  display: inline-grid;
+  top: 10px;
+  height: 250px;
+  width: 200px;
+  left: 11px;
+
+}
+
+.moviecard p
+{
+  font-family:'Josefin Sans', sans-serif;
+  position: relative;
+  top: 5px;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+
+}

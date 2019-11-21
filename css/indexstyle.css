@@ -1,0 +1,19 @@
+.slideshow
+{
+  position: absolute;
+  left: 150px;
+	margin-top: 40px;
+  top: 50px;
+	height: 500px;
+  width: 1215px;
+}
+
+a[href = "login.html"]
+{
+  display: inline;
+}
+
+a[href = "signup.html"]
+{
+  display: inline;
+}
