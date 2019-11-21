@@ -119,7 +119,7 @@
     <input id="toggle-heart2" type="checkbox">
     <label for="toggle-heart2">❤</label>
     <p>
-      In his fourth year at Hogwarts, Harry is unwittingly selected to compete in the inter-school Triwizard Tournament.
+      In his fourth year at Hogwarts, Harry is unwittingly selected to compete in the inter-school fORTNITE Tournament.
       Meanwhile, the wizarding world remains unaware of the ominous rise of dark forces.
     </p>
   </div>
