@@ -1,3 +1,5 @@
+scrollAmount = 1;
+count = 1;
 var obj = {
     xhr: new XMLHttpRequest(),
     getData: function() {
@@ -33,12 +35,35 @@ var obj = {
 
                 var parentDivElement = document.getElementById("pagecard");
                 parentDivElement.appendChild(divElement);
+
+                var imgElement = document.createElement("img");
+                imgElement.setAttribute("id", "moviethumbnail");
+                imgElement.setAttribute("src", "images/" + i + ".jpg");
+                divElement.appendChild(imgElement);
             }
         }
         else {
           console.log("Something's wrong");
         }
+    },
+    getChunks: function() {
+        scroll = document.body.scrollTop || document.documentElement.scrollTop;
+        console.log(scroll);
+        console.log(scrollAmount);
+        if(scroll > scrollAmount) {
+            scrollAmount = scroll;
+            this.xhr.onreadystatechange = this.showChunks;
+            count++;
+            console.log(count);
+            this.xhr.open("GET", "topRestaurants.php?count=" + count, true);
+            this.xhr.send();
+        }
+    },
+    showChunks: function() {
+        if(this.readyState == 4 && this.status == 200 ) {
+            var parentDivElement = document.getElementById("pagecard");
+            parentDivElement.innerHTML += this.responseText;
+        }
     }
 }
-console.log("works");
 obj.getData();
