@@ -1,0 +1,22 @@
+{
+	"Indian" : 	{
+				 	"likes" : 5,
+				 	"reviews" : ["Good!"]
+			   	},
+	"Chinese" : {
+				 	"likes" : 5,
+				 	"reviews" : ["Excellent!"]
+				},
+	"American" : {
+				 	"likes" : 5,
+				 	"reviews" : ["Lol!"]
+				},
+	"Thai" :	{
+				 	"likes" : 5,
+				 	"reviews" : ["What a killer!"]
+				},
+	"Continental" :{
+				 		"likes" : 5,
+				 		"reviews" : ["Cognax is amazing!"]
+					}
+}
