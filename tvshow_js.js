@@ -1,86 +1,50 @@
+var obj = {
+    xhr: new XMLHttpRequest(),
+    getData: function() {
+        this.xhr.onreadystatechange = this.createList;
+        this.xhr.open("GET", "topFood.php", true);
+        this.xhr.send();
+        console.log("XHR request sent");
+    },
+    createList: function() {
+        if(this.readyState == 4 && this.status == 200) {
+            var response = this.responseText;
+            console.log("Received response");
+            console.log(response);
+            /*
+             * remove 1 at end of string
+             */
+            response = response.substring(0, response.length - 1);
+            /*
+             * JSON.parse() method parses a JSON string,
+             * constructing the JS value/object described
+             * by the string
+             */
+            console.log(response[401]);
+            var responseJson = JSON.parse(response);
+            console.log(responseJson);
+            for(i in responseJson) {
+                console.log(i);
+                var divElement = document.createElement("div");
+                divElement.setAttribute("id", i);
+                divElement.setAttribute("class", "moviecard");
 
-document.cookie = "";
+                var para = document.createElement("p");
+                para.innerHTML = i;
+                divElement.appendChild(para);
 
-function fun1()
-{
-  window.open("gameofthrones.html");
-  document.cookie = "genre=Ft;";
+                var parentDivElement = document.getElementById("pagecard");
+                parentDivElement.appendChild(divElement);
+
+                var imgElement = document.createElement("img");
+                imgElement.setAttribute("id", "showthumbnail");
+                imgElement.setAttribute("src", "images/" + i + ".jpg");
+                divElement.appendChild(imgElement);
+            }
+        }
+        else {
+          console.log("Something's wrong");
+        }
+    }
 }
-
-function fun2()
-{
-  window.open("friends.html");
-  document.cookie = "genre=Dt;";
-}
-
-
-function fun3()
-{
-  //alert("df");
-  window.open("preacher.html");
-  document.cookie = "genre=Ft;";
-}
-
-function fun4()
-{
-  window.open("houseofcards.html");
-  document.cookie = "genre=Dt;";
-}
-
-
-function fun5()
-{
-  window.open("breakingbad.html");
-  document.cookie = "genre=Dt;";
-}
-
-
-function fun6()
-{
-  window.open("himym.html");
-  document.cookie = "genre=Ot;";
-}
-
-
-function fun7()
-{
-  window.open("suits.html");
-  document.cookie = "genre=Dt;";
-}
-
-
-function fun8()
-{
-  window.open("siliconvalley.html");
-  document.cookie = "genre=Ot;";
-}
-
-
-function fun9()
-{
-  window.open("flash.html");
-  document.cookie = "genre=At;";
-}
-
-
-
-var d1 = document.querySelector("#gam");
-var d2 = document.querySelector("#fri");
-var d3 = document.querySelector("#pre");
-var d4 = document.querySelector("#hou");
-var d5 = document.querySelector("#bre");
-var d6 = document.querySelector("#him");
-var d7 = document.querySelector("#sui");
-var d8 = document.querySelector("#sil");
-var d9 = document.querySelector("#fla");
-
-d1.addEventListener("click", fun1, false);
-
-d2.addEventListener("click", fun2, false);
-d3.addEventListener("click", fun3, false);
-d4.addEventListener("click", fun4, false);
-d5.addEventListener("click", fun5, false);
-d6.addEventListener("click", fun6, false);
-d7.addEventListener("click", fun7, false);
-d8.addEventListener("click", fun8, false);
-d9.addEventListener("click", fun9, false);
+obj.getData();
