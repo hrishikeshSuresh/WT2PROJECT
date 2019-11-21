@@ -66,8 +66,8 @@
   <div class = "navbar" target =_top>
     <a href="index.php"><img src="images/logo_w.png" id="logo"/></img></a>
       <a href="index.php" class="btn">Home</a>
-      <a href="movies.html" class="btn">Movies</a>
-      <a href="tvshows.html" class="btn">TV Shows</a>
+      <a href="movies.html" class="btn">Restaurants</a>
+      <a href="tvshows.html" class="btn">Food</a>
       <a href="myprofile.php" class="btn">My Profile</a>
       <input type="text" name="search" placeholder="Search" class="search_text">
       <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
