@@ -3,60 +3,60 @@
 				 "city" : "Menton", 
 				 "country" : "France",
 				 "no_of_seats" : 20,
-				 "ratings" : [],
+				 "ratings" : [5]
 				},
 	"Noma" :  	{
 				 "city" : "Copenhagen",
 				 "country" : "Denmark",
 				 "no_of_seats" : 20,
-				 "ratings" : [],
+				 "ratings" : [5]
 				},
 	"Asador Etxebarri" : {
 						  "city" : "Axpe", 
 						  "country" : "Spain",
 						  "no_of_seats" : 20,
-						  "ratings" : [],
+						  "ratings" : [5]
 						 },
 	"Gaggan" :	{
 				 "city" : "Bangkok",
 				 "country" : "Thailand",
 				 "no_of_seats" : 20,
-				 "ratings" : [],
+				 "ratings" : [5]
 				},
 	"Geranium" :	{
 					 "city" : "Copenhagen",
 					 "country" : "Denmark",
 					 "no_of_seats" : 20,
-					 "ratings" : [],
+					 "ratings" : [5]
 					},
 	"Central" :	{
 				 "city" : "Lima",
 				 "country" : "Peru",
 				 "no_of_seats" : 20,
-				 "ratings" : [],
+				 "ratings" : [5]
 				},
 	"Mugaritz" :	{
 					 "city" : "San Sebastian",
 					 "country" : "Spain",
 					 "no_of_seats" : 20,
-					 "ratings" : [],
+					 "ratings" : [5]
 					},
 	"Arpege" :	{
 				 "city" : "Paris",
 				 "country" : "France",
 				 "no_of_seats" : 20,
-				 "ratings" : [],
+				 "ratings" : [5]
 				},
 	"Disfrutar" : {
 					"city" : "Barcelone",
 					"country" : "Spain",
 					"no_of_seats" : 20,
-					"ratings" : [],
+					"ratings" : [5]
 				  },
 	"Maido" : {
 				"city" : "Lima",
 				"country" : "Peru",
 				"no_of_seats" : 20,
-				"ratings" : [],
+				"ratings" : [5]
 			  }
 }
