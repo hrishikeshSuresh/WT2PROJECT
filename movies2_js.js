@@ -1,113 +1,44 @@
+var obj = {
+    xhr: new XMLHttpRequest(),
+    getData: function() {
+        this.xhr.onreadystatechange = this.createList;
+        this.xhr.open("GET", "topRestaurants.php", true);
+        this.xhr.send();
+        console.log("XHR request sent");
+    },
+    createList: function() {
+        if(this.readyState == 4 && this.status == 200) {
+            var response = this.responseText;
+            console.log("Received response");
+            /*
+             * remove 1 at end of string
+             */
+            response = response.substring(0, response.length - 1);
+            /*
+             * JSON.parse() method parses a JSON string,
+             * constructing the JS value/object described
+             * by the string
+             */
+            var responseJson = JSON.parse(response);
+            console.log(responseJson);
+            for(i in responseJson) {
+                console.log(i);
+                var divElement = document.createElement("div");
+                divElement.setAttribute("id", i);
+                divElement.setAttribute("class", "moviecard");
 
-function fun1()
-{
-  window.open("schindler.html");
-  document.cookie = "genre=H;";
+                var para = document.createElement("p");
+                para.innerHTML = i + ', ' + responseJson[i]['city'] + ', ' + responseJson[i]['country'];
+                divElement.appendChild(para);
+
+                var parentDivElement = document.getElementById("pagecard");
+                parentDivElement.appendChild(divElement);
+            }
+        }
+        else {
+          console.log("Something's wrong");
+        }
+    }
 }
-
-function fun2()
-{
-  window.open("movietemplete.html");
-  document.cookie = "genre=A;";
-}
-
-
-function fun3()
-{
-  //alert("df");
-  window.open("kingsmangoldencircle.html");
-  document.cookie = "genre=A;";
-}
-
-function fun4()
-{
-  window.open("godfather.html");
-  document.cookie = "genre=C;";
-}
-
-
-function fun5()
-{
-  window.open("intern.html");
-  document.cookie = "genre=D;";
-}
-
-
-function fun6()
-{
-  window.open("pulpfiction.html");
-  document.cookie = "genre=C;";
-}
-
-
-function fun7()
-{
-  window.open("taxidriver.html");
-  document.cookie = "genre=D;";
-}
-
-
-function fun8()
-{
-  window.open("reservoir.html");
-  document.cookie = "genre=C;";
-}
-
-
-function fun9()
-{
-  window.open("americanx.html");
-  document.cookie = "genre=D;";
-}
-
-
-function fun10()
-{
-  window.open("inglorious.html");
-  document.cookie = "genre=H;";
-}
-
-
-function fun11()
-{
-  window.open("fightclub.html");
-  document.cookie = "genre=D;";
-}
-
-
-function fun12()
-{
-  window.open("guardiansofthegalaxy.html");
-  document.cookie = "genre=A;";
-}
-
-
-document.cookie="";
-
-var d1 = document.querySelector("#sch");
-var d2 = document.querySelector("#inc");
-var d3 = document.querySelector("#kin");
-var d4 = document.querySelector("#god");
-var d5 = document.querySelector("#int");
-var d6 = document.querySelector("#pul");
-var d7 = document.querySelector("#tax");
-var d8 = document.querySelector("#res");
-var d9 = document.querySelector("#ame");
-var d10 = document.querySelector("#ing");
-var d11 = document.querySelector("#fig");
-var d12 = document.querySelector("#gua");
-
-
-
-d1.addEventListener("click", fun1, false);
-d2.addEventListener("click", fun2, false);
-d3.addEventListener("click", fun3, false);
-d4.addEventListener("click", fun4, false);
-d5.addEventListener("click", fun5, false);
-d6.addEventListener("click", fun6, false);
-d7.addEventListener("click", fun7, false);
-d8.addEventListener("click", fun8, false);
-d9.addEventListener("click", fun9, false);
-d10.addEventListener("click", fun10, false);
-d11.addEventListener("click", fun11, false);
-d12.addEventListener("click", fun12, false);
+console.log("works");
+obj.getData();
