@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recommender system</title>
+	<style type="text/css">
+		#one {
+			 margin: 30px;
+  			  width:370px;
+  			  height:150px;
+  			  float:left;
+              background-color:pink;
+              bottom: auto;
+              border: 3px solid red;
+}
+
+	#two {
+			margin: 30px;
+  		  width:370px;
+  		  height:150px;
+          float:left;
+          background-color:blue;
+          border: 3px solid red;
+}
+
+	#three{
+		margin: 30px;
+		  width:370px;
+  		  height:150px;
+  		  float:left;
+  		  background-color:purple;
+  		  border: 3px solid red;
+	}
+
+	#form{
+		margin: 30px;
+		
+	}
+	</style>
+	<script type="text/javascript">
+		function showboxes(){
+			Box = document.getElementById('hideshow')
+			Box.style.display = 'block';
+		}
+	</script>
+</head>
+<body background="/static/img2.jpeg">
+	<!-- <button formtarget="manage_menu.html" id="b1" onclick="myFunction(this)">Manage Menu</button> -->
+	<a href="home">Home</a>
+	<a href="manage_menu">Manage Menu</a>
+	<!-- <button formtarget="_self" id="b2" onclick="myFunction(this)">Manage Feedback</button> -->
+	<a href="manage_feedback">Manage Feedback</a>
+	<a href="manage_employees">Manage Employees</a>
+	<a href="recommend">Recommender</a>
+	<a href="insights">Insights</a>
+	<a href="/" style="float: right;">Logout</a>
+	<h1>We Know something that you would like to eat....</h1>
+	<div id="form">
+	<form action="recommender" method="post">
+		<input type="text" name="feedback" id="feedback" placeholder="Enter feedback">
+		<input type="submit" value="Get recommendations">
+	</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="hideshow">
+	<h1>Here's something that you may like.....</h1>
+	<br>
+	<br>
+
+	<div id="one">
+		<table border="2px" id="rec1">
+			{%for i in range(0,6)%}
+			<tr>
+				<td>{{Items[0][i]}}</td>
+			</tr>
+			{%endfor%} 
+
+		</table>
+	</div>
+	
+	<div id="two">
+		<table border="2px" id="rec2">
+			{%for i in range(0,6)%}
+			<tr>
+				<td>{{Items[1][i]}}</td>
+			</tr>
+			{%endfor%}
+		</table>
+		
+	</div>
+	
+
+	<div id="three">
+		<table border="2px" id="rec3">
+			{%for i in range(0,6)%}
+			<tr>
+				<td>{{Items[2][i]}}</td>
+			</tr>
+			{%endfor%}
+
+		</table>
+	</div>
+
+</div>
+</body>
+</html>
