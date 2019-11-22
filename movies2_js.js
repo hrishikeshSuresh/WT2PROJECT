@@ -21,8 +21,6 @@ var obj = {
              * constructing the JS value/object described
              * by the string
              */
-
-            alert("Howdy");
             var responseJson = JSON.parse(response);
             console.log(responseJson);
             for(i in responseJson) {
