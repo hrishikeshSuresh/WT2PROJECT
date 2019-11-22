@@ -34,7 +34,9 @@ function renderImages(name, values) {
         var foodDiv = document.getElementById("cast");
         foodDiv.appendChild(foodCard);
     }
-    setTimeout(renderVideo(name, values), 5000);
+    setTimeout(function() {
+        renderVideo(name, values)
+      }, 5000);
 }
 
 function renderVideo(name, values) {
@@ -46,7 +48,7 @@ var obj = {
     xhr: new XMLHttpRequest(),
     getData: function() {
         this.xhr.onreadystatechange = this.renderText;
-        this.xhr.open("GET", "topRestaurants.php", true);
+        this.xhr.open("GET", "topRestaurants.php?" + new Date().getTime(), true);
         this.xhr.send();
         console.log("XHR request sent");
     },
@@ -72,7 +74,9 @@ var obj = {
             
             var descriptionElement = document.getElementById("desc");
             descriptionElement.innerHTML = values['description'];
-            setTimeout(renderImages(name, values), 50000);
+            setTimeout(function() {
+              renderImages(name, values)
+              }, 50000);
         }
         else {
             console.log("Something's wrong");
@@ -80,4 +84,6 @@ var obj = {
     }
 };
 
-obj.getData();
+setTimeout( function() {
+    obj.getData()
+    }, 3000);
