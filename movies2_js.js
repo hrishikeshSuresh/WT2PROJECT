@@ -28,6 +28,7 @@ var obj = {
                 var divElement = document.createElement("div");
                 divElement.setAttribute("id", i);
                 divElement.setAttribute("class", "moviecard");
+                divElement.setAttribute("onclick", "obj.openPage(this.id)");
 
                 var para = document.createElement("p");
                 para.innerHTML = i + ', ' + responseJson[i]['city'] + ', ' + responseJson[i]['country'];
@@ -64,6 +65,12 @@ var obj = {
             var parentDivElement = document.getElementById("pagecard");
             parentDivElement.innerHTML += this.responseText;
         }
+    },
+    openPage: function(pageCardId) {
+        console.log("openMe");
+        var pageCard = document.getElementById(pageCardId);
+        localStorage.setItem("name", pageCardId);
+        window.open('http://localhost/WT2PROJECT/restaurant.html', '_top');
     }
 }
 obj.getData();

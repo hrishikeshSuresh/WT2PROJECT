@@ -156,7 +156,7 @@ button
 #cast
 {
   position: inherit;
-  height: 280px;
+  height: 80px;
   left: 50px;
   top: 120px;
   width: 1100px;
@@ -188,11 +188,10 @@ button
 #cast img
 {
   position: relative;
-  height: 100px;
-  width: 100px;
+  height: auto;
+  width: auto;
   top: 30px;
   left: 50px;
-  border-radius: 50px;
   margin-right: 100px;
 
 }
@@ -216,10 +215,9 @@ button
 #castcard img
 {
   position: relative;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   align-content: center;
-  border-radius: 50px;
   margin-right: 100px;
 }
 
