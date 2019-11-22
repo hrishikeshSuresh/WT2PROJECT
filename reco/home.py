@@ -4,10 +4,7 @@ import sqlite3
 import warnings
 import recommendation2
 
-
 warnings.filterwarnings('ignore')
-
-
  
 app = Flask(__name__, template_folder='.')
 
@@ -37,14 +34,9 @@ def select_all_items(conn):
         #print(row)
     return outerList
 
-
-
 @app.route('/')
 def my_form():
     return render_template('sample_webpage.html')
-
-
-
 
 @app.route ('/recommend')   
 def recommend_page_load():
@@ -60,7 +52,7 @@ def recommender():
 
 @app.route ('/insights')
 def insights():
-    database = "dinetime.db"  #C:/Users/Guruprasad/Desktop/Sem-7/SE/DineTime/dinetime.db
+    database = "dinetime.db"
     conn = create_connection (database)
     with conn:
         print ("Querying insights")
