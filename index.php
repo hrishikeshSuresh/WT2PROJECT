@@ -6,7 +6,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>flix.io</title>
+  <title>food.io</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -55,13 +55,13 @@
   <script type="text/javascript">
     //for carousel
     var image1=new Image()
-    image1.src="images/Avengers.jpg"
+    image1.src="images/Disfrutar.jpg"
     var image2=new Image()
-    image2.src="images/ff.jpg"
+    image2.src="images/Central.jpg"
     var image3=new Image()
-    image3.src="images/got.jpg"
+    image3.src="images/Arpege.jpg"
     var image4=new Image()
-    image4.src="images/american_made.jpg"
+    image4.src="images/Geranium.jpg"
   </script>
 
 </head>
@@ -71,6 +71,7 @@
   <!--Navigation Bar -->
   <div class = "navbar" target =_top>
     <a href="index.php"><img src="images/logo_w.png" id="logo"/></img></a>
+    <!-- <a href="index.php"><img src="images/logo.png" id="logo"/></img></a> -->
       <a href="index.php" class="btn">Home</a>
       <a href="movies.html" class="btn">Restaurants</a>
       <a href="tvshows.html" class="btn">Food</a>
@@ -101,47 +102,45 @@
 </script>
 
 
-<h2>Flix Picks</h2>
+<h2>Foodio Picks</h2>
 <div class="flixpicks" id="flix">
 
   <div class="card1">
-    <img src="images/suits.jpg" alt="Suits Thumbnail" id="suits">
+    <img src="images/Asador Etxebarri.jpg" alt="Thumbnail" id="suits">
     <div class="container1">
-      <h4><b>Suits</b></h4>
+      <h6><b>          Asador Etxebarri</b></h6>
     </div>
     <input id="toggle-heart1" type="checkbox">
     <label for="toggle-heart1">❤</label>
     <p>
-      Mike Ross, a talented young college dropout, is hired as an associate by Harvey Specter,
-      one of New York's best lawyers. They must handle cases while keeping Mike's qualifications a secret.
+      Meet the best of food from the world famous Asador Etxebarri.
     </p>
   </div>
 
   <div class="card2">
-    <img src="images/goblet_of_fire.jpg" alt="Goblet Of Fire Thumbnail" id="goblet">
+    <img src="images/Gaggan.jpg" alt="Thumbnail" id="goblet">
     <div class="container2">
-      <h6 ><b>Harry Potter and The Goblet of Fire</b></h6>
+      <h6 ><b>          Gaggan</b></h6>
     </div>
     <input id="toggle-heart2" type="checkbox">
     <label for="toggle-heart2">❤</label>
     <p>
-      In his fourth year at Hogwarts, Harry is unwittingly selected to compete in the inter-school fORTNITE Tournament.
-      Meanwhile, the wizarding world remains unaware of the ominous rise of dark forces.
+     World class cuisine, crafted by the best of chefs!!
     </p>
   </div>
 </div>
 
-<h2 id="headingRec" style="left: 550px">Recomended movies and Shows</h2>
+<h2 id="headingRec" style="left: 550px">Mouth Watering Continental Cuisines!!</h2>
 <div class="recomendation" id="flix">
 
   <div class="card1" style="height: 550px;">
-    <img src="images/inception.jpg" alt="Suits Thumbnail" id = "img1">
+    <img src="images/food/Maido/1.jpg" alt="Suits Thumbnail" id = "img1">
     <div class="container1">
     </div>
   </div>
 
   <div class="card2" style="height: 550px;">
-    <img src="images/got1.jpg" alt="Goblet Of Fire Thumbnail" id="img2">
+    <img src="images/food/Central/1.jpg" alt="Goblet Of Fire Thumbnail" id="img2">
     <div class="container2">
     </div>
   </div>
@@ -149,7 +148,7 @@
 
 
 <footer id="footer">
-    <p>&copy;2017 flix.io </p>
+    <p>&copy;2017 food.io </p>
   </footer>
 
   </div>
