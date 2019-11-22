@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+
+
+
+<?php session_start(); //krishna ne comment ?>
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -23,6 +27,8 @@
 			height: 120px;
 			animation: spin 2s linear infinite;
 		}
+
+
 
 		@keyframes spin{
 			from {transform: rotate(0deg);}
