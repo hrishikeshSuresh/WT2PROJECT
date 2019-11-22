@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recommender system</title>
+	<style type="text/css">
+		#one {
+			 margin: 30px;
+  			  width:370px;
+  			  height:150px;
+  			  float:left;
+              background-color:pink;
+              bottom: auto;
+              border: 3px solid red;
+}
+
+	#two {
+			margin: 30px;
+  		  width:370px;
+  		  height:150px;
+          float:left;
+          background-color:blue;
+          border: 3px solid red;
+}
+
+	#three{
+		margin: 30px;
+		  width:370px;
+  		  height:150px;
+  		  float:left;
+  		  background-color:purple;
+  		  border: 3px solid red;
+	}
+
+	#form{
+		margin-left: 60px;
+		
+	}
+
+input[type=text] {
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+    border: 2px solid red;
+  border-radius: 4px;
+   background-color: #3CBC8D;
+}
+
+input[type=text]:focus {
+  width: 80%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+	</style>
+	<script type="text/javascript">
+		function showboxes(){
+			Box = document.getElementById('hideshow')
+			Box.style.display = 'block';
+		}
+	</script>
+</head>
+<body background="/static/img2.jpeg">
+	<div class="topnav">
+
+	<a href="recommend">Check it out !!</a>
+	
+	<a href="/" style="float: right;">Logout</a>
+	</div>
+	<h1>Our recommendations for the Customer...</h1>
+	<div id="form">
+	<form action="recommender" method="post">
+		<input width="100" height="78"  type="text" name="feedback" id="feedback" placeholder="Enter feedback">
+		<input type="submit" value="Get recommendations">
+	</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="hideshow">
+	<h1>Here's something that you may want to Order from the menu.....</h1>
+	<br>
+	<br>
+
+	<div id="one">
+		<table border="2px" id="rec1">
+			{%for i in range(0,6)%}
+			<tr>
+				<td>{{Items[0][i]}}</td>
+			</tr>
+			{%endfor%} 
+
+		</table>
+	</div>
+	
+	<div id="two">
+		<table border="2px" id="rec2">
+			{%for i in range(0,6)%}
+			<tr>
+				<td>{{Items[1][i]}}</td>
+			</tr>
+			{%endfor%}
+		</table>
+		
+	</div>
+	
+
+	<div id="three">
+		<table border="2px" id="rec3">
+			{%for i in range(0,6)%}
+			<tr>
+				<td>{{Items[2][i]}}</td>
+			</tr>
+			{%endfor%}
+
+		</table>
+	</div>
+
+</div>
+</body>
+</html>
