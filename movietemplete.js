@@ -30,9 +30,9 @@ function renderImages(name, values) {
         console.log("images/food" + name + "/" + i + ".jpg");
         image.setAttribute("class", "cast");
 
-        foodCard.appendChild(image);
-        var foodDiv = document.getElementById("cast");
-        foodDiv.appendChild(foodCard);
+        var foodWord = document.getElementById("castword");
+        foodWord.appendChild(image);
+
     }
     setTimeout(function() {
         renderVideo(name, values)
