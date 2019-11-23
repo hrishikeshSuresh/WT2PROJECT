@@ -116,7 +116,13 @@ $password = $_SESSION['password'];
           } //end of showdata function
         }//end of obj
     obj2.getData();
+
   } //end of bookTableFn
+
+
+
+
+
     function updateJsonFile(fileName, fileContents) {
     
       // var res=this.responseText;
@@ -194,13 +200,13 @@ $password = $_SESSION['password'];
             tbl.className = "settings";
             tbl.style.width  = '500px';
             tbl.style.border = '1px solid green';
-                        var tr = tbl.insertRow();
+                        /*var tr = tbl.insertRow();
                         var td1 = tr.insertCell();
                         var td2 = tr.insertCell();
                         var td3 = tr.insertCell();
                         td1.appendChild(document.createTextNode("City Name"));
                         td2.appendChild(document.createTextNode("Restaurant Name"));
-                        td3.appendChild(document.createTextNode("Number Of Seats Available"));
+                        td3.appendChild(document.createTextNode("Number Of Seats Available"));*/
                 //added th here
                 var row   = tbl.insertRow(0);
                 row.insertCell(0).outerHTML = "<th>City</th>";  // rather than innerHTML
