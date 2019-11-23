@@ -36,12 +36,12 @@ function renderImages(name, values) {
     }
     setTimeout(function() {
         renderVideo(name, values)
-      }, 5000);
+      }, 2000);
 }
 
 function renderVideo(name, values) {
     var videoElement = document.getElementById("movie_vid");
-    videoElement.src = "https://www.youtube.com/embed/HhesaQXLuRY";
+    videoElement.src = values["video"].replace("watch?v=", "embed/");
 }
 
 var obj = {
@@ -76,7 +76,7 @@ var obj = {
             descriptionElement.innerHTML = values['description'];
             setTimeout(function() {
               renderImages(name, values)
-              }, 50000);
+              }, 2000);
         }
         else {
             console.log("Something's wrong");
@@ -86,4 +86,4 @@ var obj = {
 
 setTimeout( function() {
     obj.getData()
-    }, 3000);
+    }, 2000);
