@@ -9,21 +9,27 @@
 </head>
 
 <body>
-  <!--Navigation Bar -->
+ <!--Navigation Bar -->
   <div class = "navbar" target =_top>
-    <img src="images/logo_w.png" id="logo"/></img>
+    <a href="index.php"><img src="images/logo_w.png" id="logo"/></img></a>
+    <!-- <a href="index.php"><img src="images/logo.png" id="logo"/></img></a> -->
       <a href="index.php" class="btn">Home</a>
       <a href="movies.html" class="btn">Restaurants</a>
-      <a href="tvshows.html" class="btn">Food</a>
+      <a href="http://localhost:5000" class="btn">Recommendation</a>
       <a href="myprofile.php" class="btn">My Profile</a>
-      <input type="text" name="search" placeholder="Search" class="search_text">
+      <a href="recipes.html" class="btn">Cooking Recipes</a>
+      <table border="0" cellpadding="0" id="spawn-table">
+        <tr><td><input type="text" name="search" id="search" placeholder="Search" class="search_text" onkeypress="obj.getTerm()"></td></tr>
+        <tr><td></td><td><div id="container"></td></div></tr>
+      </table>
       <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
       <div class="loginBtn">
-        <a href="login.html" class="btn">Log in</a>
-        <a href="signup.html" class="btn">Sign up</a>
+        <a href="login.html" class="btn" id="login">Log in</a>
+        <a href="signup.html" class="btn" id="signup">Sign up</a>
+        <a class="btn" href="logout.php" id="logout">Log Out</a>
       </div>
-  </div><!--Navigation bar ends -->
-  <div id="pagecard">
+  </div>
+    <div id="pagecard">
     <div id="greenbox"><p> RESTAURANTS </p></div>
   </div>
   <script type="text/javascript" src="movies2_js.js">

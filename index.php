@@ -84,13 +84,13 @@
 <body onload="showMyPage()" style="margin: 0px;">
 	<div id="loader"></div>
 	<div style="display: none;" id="myDiv" class="animate-bottom">
-  <!--Navigation Bar -->
+   <!--Navigation Bar -->
   <div class = "navbar" target =_top>
     <a href="index.php"><img src="images/logo_w.png" id="logo"/></img></a>
     <!-- <a href="index.php"><img src="images/logo.png" id="logo"/></img></a> -->
       <a href="index.php" class="btn">Home</a>
       <a href="movies.html" class="btn">Restaurants</a>
-      <a href="tvshows.html" class="btn">Recommendation</a>
+      <a href="http://localhost:5000" class="btn">Recommendation</a>
       <a href="myprofile.php" class="btn">My Profile</a>
       <a href="recipes.html" class="btn">Cooking Recipes</a>
       <table border="0" cellpadding="0" id="spawn-table">
@@ -103,8 +103,7 @@
         <a href="signup.html" class="btn" id="signup">Sign up</a>
         <a class="btn" href="logout.php" id="logout">Log Out</a>
       </div>
-  </div>
-  <img src="images/Avengers.jpg" name="slide" width="400" height="400" class="slideshow">
+  </div><img src="images/Avengers.jpg" name="slide" width="400" height="400" class="slideshow">
   <script type="text/javascript">
 
       var step=1
