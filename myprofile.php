@@ -36,8 +36,10 @@ $password = $_SESSION['password'];
       <a href="movies.html" class="btn">Movies</a>
       <a href="tvshows.html" class="btn">TV Shows</a>
       <a href="myprofile.php" class="btn">My Profile</a>
-      <input type="text" name="search" placeholder="Search" class="search_text">
-      <a href="#" class="search"><i class="fa fa-search"></i></a>
+      <a href="getSeats.php" class="btn">Book a table</a>
+      <!-- <input type="text" name="search" placeholder="Search" class="search_text"> -->
+      <!-- <a href="#" class="search"><i class="fa fa-search"></i></a> -->
+
       <div class="loginBtn">
         <a href="login.html" class="btn" id="login">Log in</a>
         <a href="signup.html" class="btn" id="signup">Sign up</a>
