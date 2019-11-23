@@ -75,10 +75,10 @@
       <a href="index.php" class="btn">Home</a>
       <a href="movies.html" class="btn">Restaurants</a>
       <a href="tvshows.html" class="btn">Recommendation</a>
-      <a href="myprofile.php" class="btn">My Profile</a>
-      <a href="recipes.html" class="btn">Cooking Recipes</a>
-      <input type="text" name="search" placeholder="Search" class="search_text">
-      <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
+      <a href="myprofile.php" class="btn">Profile</a>
+      <a href="recipes.html" class="btn">Recipes</a>
+      <!-- <input type="text" name="search" placeholder="Search" class="search_text"> -->
+      <!-- <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script> -->
       <div class="loginBtn">
         <a href="login.html" class="btn" id="login">Log in</a>
         <a href="signup.html" class="btn" id="signup">Sign up</a>

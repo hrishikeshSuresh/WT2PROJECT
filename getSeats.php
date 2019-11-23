@@ -37,8 +37,8 @@ $password = $_SESSION['password'];
       <a href="movies.html" class="btn">Movies</a>
       <a href="tvshows.html" class="btn">TV Shows</a>
       <a href="myprofile.php" class="btn">My Profile</a>
-      <input type="text" name="search" placeholder="Search" class="search_text">
-      <a href="#" class="search"><i class="fa fa-search"></i></a>
+      <!-- <input type="text" name="search" placeholder="Search" class="search_text"> -->
+      <!-- <a href="#" class="search"><i class="fa fa-search"></i></a> -->
       <div class="loginBtn">
         <a href="login.html" class="btn" id="login">Log in</a>
         <a href="signup.html" class="btn" id="signup">Sign up</a>
@@ -193,14 +193,21 @@ $password = $_SESSION['password'];
             tbl  = document.createElement('table');
             tbl.className = "settings";
             tbl.style.width  = '500px';
-            tbl.style.border = '1px solid black';
+            tbl.style.border = '1px solid green';
                         var tr = tbl.insertRow();
                         var td1 = tr.insertCell();
                         var td2 = tr.insertCell();
                         var td3 = tr.insertCell();
                         td1.appendChild(document.createTextNode("City Name"));
-                        td2.appendChild(document.createTextNode("Country Name"));
+                        td2.appendChild(document.createTextNode("Restaurant Name"));
                         td3.appendChild(document.createTextNode("Number Of Seats Available"));
+                //added th here
+                var row   = tbl.insertRow(0);
+                row.insertCell(0).outerHTML = "<th>City</th>";  // rather than innerHTML
+                row.insertCell(1).outerHTML = "<th>Restaurant Name</th>";  // rather than innerHTML
+                row.insertCell(2).outerHTML = "<th>Availability</th>";  // rather than innerHTML
+                //end of th
+
 
             console.log(objKeys);
             for (var key in objKeys) { 
@@ -216,7 +223,15 @@ $password = $_SESSION['password'];
               td3.appendChild(document.createTextNode(numberOfSeatsAvailable));
               // alert(objRes[key]);
             }
-            document.getElementById("content").appendChild(tbl);
+            tbl.style.width = "100%";
+            // document.getElementById("content").appendChild(tbl);
+            var wdiv = document.createElement("div");
+            var contentdiv = document.createElement("div");
+            wdiv.setAttribute("id", "w1");
+            contentdiv.setAttribute("id", "content1");
+            wdiv.appendChild(contentdiv);
+            contentdiv.appendChild(tbl);
+            document.body.appendChild(wdiv);
             obj.getData(obj.t);
           } //end of this.readystate == 4
         } //end of showdata function
