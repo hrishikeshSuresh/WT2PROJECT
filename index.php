@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/card.css" />
   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
   <style type="text/css">
-		#loader{
+		#loader {
 			position:absolute;
 			left:50%;
 			top:50%;
@@ -30,25 +30,41 @@
 
 
 
-		@keyframes spin{
+		@keyframes spin {
 			from {transform: rotate(0deg);}
 			to {transform: rotate(360deg);}
 		}
 
-		#myDiv{
+		#myDiv {
 			display: none;
 		}
 
-		.animate-bottom{
+		.animate-bottom {
 			position:relative;
 			animation-name: animatebottom;
 			animation-duration: 1s;
 		}
 
-		@keyframes animatebottom{
+		@keyframes animatebottom {
 			from {bottom: -100px; opacity: 0;}
 			to{bottom: 0px; opacity: 1}
 		}
+
+    #container {
+      border:solid 2px black;
+      display:none;
+    }
+    
+    .fooditem {
+      background-color:grey;
+      color:black;
+      font-weight: bold;
+      font-family: 'Josefin Sans', sans-serif; 
+    }
+    
+    .fooditem:hover {
+      background-color:white;
+    }
   </style>
   
 
@@ -77,7 +93,10 @@
       <a href="tvshows.html" class="btn">Recommendation</a>
       <a href="myprofile.php" class="btn">My Profile</a>
       <a href="recipes.html" class="btn">Cooking Recipes</a>
-      <input type="text" name="search" placeholder="Search" class="search_text">
+      <table border="0" cellpadding="0" id="spawn-table">
+        <tr><td><input type="text" name="search" id="search" placeholder="Search" class="search_text" onkeypress="obj.getTerm()"></td></tr>
+        <tr><td></td><td><div id="container"></td></div></tr>
+      </table>
       <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
       <div class="loginBtn">
         <a href="login.html" class="btn" id="login">Log in</a>
