@@ -33,8 +33,8 @@ $password = $_SESSION['password'];
 	<div class = "navbar" target =_top>
     <a href="index.php"><img src="images/logo_w.png" id="logo"/></img></a>
       <a href="index.php" class="btn">Home</a>
-      <a href="movies.html" class="btn">Movies</a>
-      <a href="tvshows.html" class="btn">TV Shows</a>
+      <a href="movies.html" class="btn">Restaurants</a>
+      <!-- <a href="tvshows.html" class="btn">R</a> -->
       <a href="myprofile.php" class="btn">My Profile</a>
       <a href="getSeats.php" class="btn">Book a table</a>
       <!-- <input type="text" name="search" placeholder="Search" class="search_text"> -->

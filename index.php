@@ -1,7 +1,4 @@
-
-
-
-<?php session_start(); //krishna ne comment ?>
+<?php session_start(); ?>
 
 <html>
 <head>
@@ -86,24 +83,24 @@
 	<div style="display: none;" id="myDiv" class="animate-bottom">
    <!--Navigation Bar -->
   <div class = "navbar" target =_top>
-    <a href="index.php"><img src="images/logo_w.png" id="logo"/></img></a>
+    <a href="index.php"><img src="images/logo_w.png" id="logo"/></a>
     <!-- <a href="index.php"><img src="images/logo.png" id="logo"/></img></a> -->
       <a href="index.php" class="btn">Home</a>
       <a href="movies.html" class="btn">Restaurants</a>
       <a href="http://localhost:5000" class="btn">Recommendation</a>
       <a href="myprofile.php" class="btn">My Profile</a>
       <a href="recipes.html" class="btn">Cooking Recipes</a>
-      <table border="0" cellpadding="0" id="spawn-table">
+     <!--  <table border="0" cellpadding="0" id="spawn-table">
         <tr><td><input type="text" name="search" id="search" placeholder="Search" class="search_text" onkeypress="obj.getTerm()"></td></tr>
         <tr><td></td><td><div id="container"></td></div></tr>
-      </table>
-      <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script>
+      </table> -->
+      <!-- <a href="#" class="search"><i class="fa fa-search"  id="searchlogo"></i></a><script type="text/javascript" src = "searchbar.js"></script> -->
       <div class="loginBtn">
         <a href="login.html" class="btn" id="login">Log in</a>
         <a href="signup.html" class="btn" id="signup">Sign up</a>
         <a class="btn" href="logout.php" id="logout">Log Out</a>
       </div>
-  </div><img src="images/Avengers.jpg" name="slide" width="400" height="400" class="slideshow">
+  </div><img style="left: 70px" src="images/Noma.jpg" name="slide" width="400" height="400" class="slideshow">
   <script type="text/javascript">
 
       var step=1
@@ -167,7 +164,7 @@
 
 
 <footer id="footer">
-    <p>&copy;2017 food.io </p>
+    <p>&copy;2019 food.io webtech project</p>
   </footer>
 
   </div>
